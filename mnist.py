@@ -12,7 +12,6 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 # Normalize pixel values to [0,1] range
 x_train, x_test = x_train / 255.0, x_test / 255.0
 
-# Define a simple neural network model
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),  # Flatten 28x28 images into 1D array
     keras.layers.Dense(128, activation='relu'),
